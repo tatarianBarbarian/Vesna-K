@@ -1,0 +1,79 @@
+.features {
+  padding-top: 13rem;
+  position: relative;
+
+  &__triggers {
+    position: absolute;
+    list-style: none;
+    top: 23%;
+    z-index: 998;
+  }
+
+  &__trigger {
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 100px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 1px;
+      background: grey;
+      top: 50%;
+      left: 150%;
+    }
+
+    &--active {
+      color: $color-primary;
+      font-weight: bold;
+
+      &::after {
+        background: $color-primary;
+      }
+    }
+  }
+
+  &__slides {
+    position: relative;
+    height: 500px;
+    overflow-y: hidden;
+  }
+
+  &__slide {
+    position: relative;
+    height: 500px;
+    transition: transform 0.5s;
+  }
+
+  &__desc {
+    position: absolute;
+    left: 11rem;
+  }
+
+  &__desc-heading {
+    font-size: 4.6rem;
+    color: $color-primary;
+    font-weight: bold;
+    display: block;
+  }
+
+  &__desc-exp {
+    list-style: none;
+  }
+
+  &__desc-item {
+    font-size: 2.2rem;
+    margin-top: 4rem;
+    color: $color-grey;
+  }
+
+  &__pic {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-height: 500px;
+  }
+}

@@ -2,14 +2,14 @@
 @font-face {
   font-family: Proxima Nova;
   src: url("../fonts/ProximaNova-Reg.otf") format("opentype");
-  font-weight: normal;
+  font-weight: 400;
 }
 
 // PN - RegIt
 @font-face {
   font-family: Proxima Nova;
   src: url("../fonts/ProximaNova-RegIt.otf") format("opentype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -17,14 +17,14 @@
 @font-face {
   font-family: Proxima Nova;
   src: url("../fonts/ProximaNova-Bold.otf") format("opentype");
-  font-weight: bold;
+  font-weight: 700;
 }
 
 // PN - Bold Italic
 @font-face {
   font-family: Proxima Nova;
   src: url("../fonts/ProximaNova-BoldIt.otf") format("opentype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -33,7 +33,7 @@
 @font-face {
   font-family: Proxima Nova;
   src: url("../fonts/ProximaNova-Light.otf") format("opentype");
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 // PN - Light Italic
@@ -41,6 +41,14 @@
 @font-face {
   font-family: Proxima Nova;
   src: url("../fonts/ProximaNova-LightIt.otf") format("opentype");
-  font-weight: lighter;
+  font-weight: 200;
   font-style: italic;
+}
+
+// PN - Thin
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url("../fonts/ProximaNova-Thin.otf") format("opentype");
+  font-weight: 100;
 }

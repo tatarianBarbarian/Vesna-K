@@ -18,7 +18,7 @@
     &-border {
       display: block;
       padding: 2.8rem 3.5rem;
-      color: $color-primary;
+      color: black;
       text-decoration: none;
     }
 
@@ -65,6 +65,7 @@
     &-wrapper {
       display: none;
       position: absolute;
+      z-index: 999;
       left: 0;
       top: 100%;
       padding-top: 2rem;
