@@ -17,20 +17,33 @@
     background-position: right center;
     padding: 8.5rem 4.5rem;
     height: 520px;
+    cursor: pointer;
 
     &--first {
       background-color: #16a9ea;
       background-image: url(../img/pipe-acc1.png);
+
+      &:hover {
+        background-color: lighten(#16a9ea, 10%);
+      }
     }
 
     &--second {
       background-color: #0db9e1;
       background-image: url(../img/pipe-acc2.png);
+
+      &:hover {
+        background-color: lighten(#0db9e1, 10%);
+      }
     }
 
     &--third {
       background-color: #03c9d9;
       background-image: url(../img/pipe-acc3.png);
+
+      &:hover {
+        background-color: lighten(#03c9d9, 10%);
+      }
     }
   }
 
