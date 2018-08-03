@@ -1,0 +1,63 @@
+:root {
+  --num-of-items: 3;
+}
+
+.accordeon {
+  display: flex;
+
+  &__radio {
+    display: none;
+  }
+
+  &__item {
+    width: calc(100% / var(--num-of-items));
+    min-height: 52rem;
+    transition: all 0.1s;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 8.5rem 4.5rem;
+    height: 520px;
+
+    &--first {
+      background-color: #16a9ea;
+      background-image: url(../img/pipe-acc1.png);
+    }
+
+    &--second {
+      background-color: #0db9e1;
+      background-image: url(../img/pipe-acc2.png);
+    }
+
+    &--third {
+      background-color: #03c9d9;
+      background-image: url(../img/pipe-acc3.png);
+    }
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  &__desc-wrapper {
+    display: none;
+  }
+
+  &__desc {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    color: white;
+    margin-top: 3rem;
+    max-width: 60%;
+  }
+
+  &__radio:checked + &__item {
+    width: calc((100% / var(--num-of-items)) * 2.5);
+    padding: 8.5rem;
+  }
+
+  &__radio:checked + &__item > &__desc-wrapper {
+    display: block;
+  }
+}
