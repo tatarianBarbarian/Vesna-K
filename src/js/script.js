@@ -1,3 +1,5 @@
+//First slider (features block)
+
 document.addEventListener("click", e => {
   var targ = e.target;
 

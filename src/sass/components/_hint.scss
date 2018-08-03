@@ -1,0 +1,22 @@
+.hint {
+  border-radius: 5px;
+  text-align: center;
+  background: white;
+  color: $color-grey;
+  position: absolute;
+  //TODO: Play around with shadows
+  box-shadow: 0 0 18px -10px black;
+  padding: 2rem;
+  width: 110%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border: 10px solid transparent;
+    border-bottom: 10px solid white;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

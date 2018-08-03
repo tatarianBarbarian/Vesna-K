@@ -2,7 +2,8 @@
 @import "features";
 
 .main-header {
-  background: url(../img/bg1.png);
+  background: url(../img/bg1.png) no-repeat;
+  background-size: cover;
 }
 
 .tel {
