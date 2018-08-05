@@ -18,3 +18,10 @@ document.addEventListener("click", e => {
     targ.classList.add("features__trigger--active");
   }
 });
+
+//Second slider (new products block (ps is for 'product slider'))
+
+//1. Define elements
+let psBtnPrev = document.querySelector(".prodslider__control--prev");
+let psBtnPrev = document.querySelector(".prodslider__control--next");
+let psSlideWrapper = document.querySelector(".prodslider__slide-wrapper");

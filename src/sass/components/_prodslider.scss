@@ -1,0 +1,131 @@
+:root {
+  --prodslider-wrapper-width: 100%;
+  --prodslider-item-width: 33%;
+}
+
+.newprod {
+  background-image: linear-gradient(to bottom, white, #ecf7ff);
+  background-repeat: no-repeat;
+}
+
+.prodslider {
+  overflow-x: hidden;
+
+  &__heading-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+  }
+
+  &__heading {
+    font-size: 4.6rem;
+    color: $color-primary;
+    font-weight: bold;
+  }
+
+  &__controls {
+    display: flex;
+  }
+
+  &__control {
+    width: 8.5rem;
+    height: 8rem;
+    border: 1px solid $color-primary;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    cursor: pointer;
+
+    &--prev {
+      border-right: none;
+      border-radius: 50% 0 0 50%;
+      background-image: url(../img/prodslider-arr-left-blue.png);
+
+      &:disabled {
+        background-image: url(../img/prodslider-arr-left-grey.png);
+      }
+    }
+
+    &--next {
+      border-radius: 0 50% 50% 0;
+      background-image: url(../img/prodslider-arr-right-blue.png);
+
+      &:disabled {
+        background-image: url(../img/prodslider-arr-right-grey.png);
+      }
+    }
+  }
+
+  &__slide-wrapper {
+    display: flex;
+    width: var(--prodslider-wrapper-width);
+    transition: all 0.3s;
+  }
+
+  &__item {
+    width: var(--prodslider-item-width);
+    padding: 6rem 3.5rem;
+    position: relative;
+    background: white;
+
+    &:hover {
+      box-shadow: 0 0 18px -10px black;
+      z-index: 998;
+    }
+  }
+
+  &__item:hover > &__fastview {
+    display: inline-block;
+  }
+
+  &__item:hover &__buybtn {
+    box-shadow: 0 0 4rem -10px $color-primary;
+  }
+
+  &__fastview {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid $color-grey-light;
+    background: url(../img/fast-view-icon.png) no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-top: 5rem;
+  }
+
+  &__size {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 5rem;
+  }
+
+  &__price-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  &__price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  &__buy {
+    font-size: 1.8rem;
+    border-bottom: 2px dotted black;
+    text-decoration: none;
+    color: black;
+  }
+}
