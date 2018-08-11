@@ -79,3 +79,5 @@ document.addEventListener("click", e => {
     checkPsButtons();
   }
 });
+
+//Third slider (info)

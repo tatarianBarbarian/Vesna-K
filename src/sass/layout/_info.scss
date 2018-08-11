@@ -1,0 +1,32 @@
+.info {
+  &__items-wrapper {
+    display: flex;
+  }
+
+  &__item {
+    width: 50%;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+
+    &--left {
+      padding-right: 11rem;
+    }
+
+    &--right {
+      padding-left: 11rem;
+    }
+
+    &--square-left {
+      background-image: url(../img/pipe-info.png),
+        url(../img/bg-blue-square.png);
+      background-repeat: no-repeat;
+      background-position: 100% 90%, left center;
+    }
+
+    &--square-right {
+      background-image: url(../img/bg-blue-square.png);
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+  }
+}

@@ -64,6 +64,32 @@
     background-image: url(../img/arr-right-blue.png);
     background-repeat: no-repeat;
     background-position: 95% center;
+
+    &-bluebg {
+      background-image: url(../img/arr-right-white.png),
+        linear-gradient(to right, $btn-gr-1, $btn-gr-2);
+      color: white;
+      background-repeat: no-repeat;
+      background-position: 95% center;
+
+      &:hover {
+        background-image: url(../img/arr-right-white.png),
+          linear-gradient(
+            to right,
+            lighten($btn-gr-1, 10%),
+            lighten($btn-gr-2, 10%)
+          );
+      }
+
+      &:active {
+        background-image: url(../img/arr-right-white.png),
+          linear-gradient(
+            to right,
+            darken($btn-gr-1, 5%),
+            darken($btn-gr-2, 5%)
+          );
+      }
+    }
   }
 
   &__quantity-wrapper {
