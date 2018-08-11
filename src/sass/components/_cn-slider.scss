@@ -1,0 +1,25 @@
+.cn-slider {
+  transform: translateY(-2.5rem);
+
+  &__slides {
+  }
+
+  &__slide {
+  }
+
+  &__controls {
+  }
+
+  &__arr {
+    &--left {
+    }
+
+    &--right {
+    }
+  }
+
+  &__control {
+    &--active {
+    }
+  }
+}

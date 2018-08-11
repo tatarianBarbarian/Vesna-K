@@ -32,7 +32,7 @@
   &__control {
     width: 8.5rem;
     height: 8rem;
-    border: 1px solid $color-primary;
+    border: 1px solid $color-grey-light;
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
@@ -83,7 +83,7 @@
     display: inline-block;
   }
 
-  &__item:hover &__buybtn {
+  &__item:hover .btn--buy {
     box-shadow: 0 0 4rem -10px $color-primary;
   }
 
