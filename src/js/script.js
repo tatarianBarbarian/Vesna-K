@@ -22,6 +22,60 @@ document.addEventListener("click", e => {
 //Second slider (new products block (ps is for 'product slider'))
 
 //1. Define elements
-let psBtnPrev = document.querySelector(".prodslider__control--prev");
-let psBtnPrev = document.querySelector(".prodslider__control--next");
-let psSlideWrapper = document.querySelector(".prodslider__slide-wrapper");
+const psBtnPrev = document.querySelector(".prodslider__control--prev");
+const psBtnNext = document.querySelector(".prodslider__control--next");
+const psSlideWrapper = document.querySelector(".prodslider__slide-wrapper");
+const psItems = document.querySelectorAll(".prodslider__item");
+
+let itemsPerSlide = getComputedStyle(document.body).getPropertyValue(
+  "--items-per-slide"
+);
+let slideIndex = 0;
+let oneSlideWidth = psSlideWrapper.offsetWidth;
+let itemWIdth = oneSlideWidth / itemsPerSlide;
+let computedContWidth = itemWIdth * psItems.length;
+let totalSlides = Math.floor(computedContWidth / oneSlideWidth);
+
+const initSlider = () => {
+  document.body.style.setProperty(
+    "--prodslider-wrapper-width",
+    `${computedContWidth}px`
+  );
+  document.body.style.setProperty("--prodslider-item-width", `${itemWIdth}px`);
+};
+
+const moveSlider = () => {
+  psSlideWrapper.style.transform = `translateX(-${oneSlideWidth *
+    slideIndex}px)`;
+};
+
+const checkPsButtons = () => {
+  if (slideIndex === 0) {
+    psBtnPrev.setAttribute("disabled", "true");
+  }
+  if (slideIndex > 0) {
+    psBtnPrev.removeAttribute("disabled");
+  }
+  if (slideIndex === totalSlides) {
+    psBtnNext.setAttribute("disabled", "true");
+  }
+  if (slideIndex < totalSlides) {
+    psBtnNext.removeAttribute("disabled");
+  }
+};
+
+initSlider();
+checkPsButtons();
+
+document.addEventListener("click", e => {
+  const targ = e.target;
+  if (targ.className.includes("prodslider__control--prev")) {
+    slideIndex--;
+    moveSlider();
+    checkPsButtons();
+  } else if (targ.className.includes("prodslider__control--next")) {
+    slideIndex++;
+    moveSlider();
+    checkPsButtons();
+  }
+});

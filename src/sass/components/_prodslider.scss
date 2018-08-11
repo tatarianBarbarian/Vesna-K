@@ -1,6 +1,7 @@
 :root {
   --prodslider-wrapper-width: 100%;
   --prodslider-item-width: 33%;
+  --items-per-slide: 3;
 }
 
 .newprod {
@@ -59,7 +60,7 @@
   &__slide-wrapper {
     display: flex;
     width: var(--prodslider-wrapper-width);
-    transition: all 0.3s;
+    transition: transform 1s;
   }
 
   &__item {
@@ -67,6 +68,9 @@
     padding: 6rem 3.5rem;
     position: relative;
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &:hover {
       box-shadow: 0 0 18px -10px black;
