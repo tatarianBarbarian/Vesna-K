@@ -137,6 +137,16 @@
       background-image: url(../img/ang-right-white.png);
     }
   }
+
+  &--ask-us {
+    background-image: url(../img/question-icon.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+
+    &:hover {
+      box-shadow: 0 0 4rem -10px white;
+    }
+  }
 }
 
 .btn-control {

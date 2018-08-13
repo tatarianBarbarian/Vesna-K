@@ -6,13 +6,29 @@
   margin: -1px;
 }
 
+// Font properties
+
 .u-fs-20 {
   font-size: 2rem;
+}
+
+.u-fs-22 {
+  font-size: 2.2rem;
 }
 
 .u-fs-26 {
   font-size: 2.6rem;
 }
+
+.u-fs-46 {
+  font-size: 4.6rem;
+}
+
+.u-fw-bold {
+  font-weight: bold;
+}
+
+//Margins
 
 .u-mt-30 {
   margin-top: 3rem;
@@ -30,9 +46,13 @@
   margin-top: 10rem;
 }
 
+//Text align
+
 .u-ta-c {
   text-align: center;
 }
+
+// Backgrounds
 
 .u-bg-white-blue {
   background: linear-gradient(to right, white 50%, $color-secondary 49%);
@@ -42,6 +62,12 @@
   background: linear-gradient(to right, $color-secondary 50%, white 49%);
 }
 
+// Colors
+
 .u-c-primary {
   color: $color-primary;
+}
+
+.u-c-white {
+  color: $color-white;
 }

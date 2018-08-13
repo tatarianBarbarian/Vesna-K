@@ -1,0 +1,14 @@
+.action {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12rem 0;
+
+  &--writeus {
+    background-image: linear-gradient(
+        to right,
+        rgba($btn-gr-1, 0.9),
+        rgba($btn-gr-2, 0.9)
+      ),
+      url(../img/zavod-1.png);
+  }
+}

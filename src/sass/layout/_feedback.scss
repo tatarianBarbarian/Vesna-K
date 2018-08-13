@@ -1,6 +1,7 @@
 .feedback {
   background-color: $color-secondary;
   padding-top: 8rem;
+  padding-bottom: 13rem;
 
   &__items {
     display: flex;
@@ -17,6 +18,7 @@
   &__review {
     position: relative;
     box-shadow: 0 0 18px -10px black;
+    background: white;
   }
 
   &__pic-overlay {
