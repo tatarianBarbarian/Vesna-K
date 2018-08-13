@@ -138,3 +138,37 @@
     }
   }
 }
+
+.btn-control {
+  &__arr-wrapper {
+    display: flex;
+  }
+  &__arr {
+    width: 8.5rem;
+    height: 8rem;
+    border: 1px solid $color-grey-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+
+    &--left {
+      border-right: none;
+      border-radius: 50% 0 0 50%;
+      background-image: url(../img/prodslider-arr-left-blue.png);
+
+      &:disabled {
+        background-image: url(../img/prodslider-arr-left-grey.png);
+      }
+    }
+
+    &--right {
+      border-radius: 0 50% 50% 0;
+      background-image: url(../img/prodslider-arr-right-blue.png);
+
+      &:disabled {
+        background-image: url(../img/prodslider-arr-right-grey.png);
+      }
+    }
+  }
+}
