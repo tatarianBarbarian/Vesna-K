@@ -1,0 +1,29 @@
+@import "footer-nav";
+
+.main-footer {
+  padding-top: 5rem;
+  display: flex;
+  //   justify-content: space-between;
+
+  &__col {
+    width: calc(100% / 4 - 3.5rem);
+    margin-right: 3.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__adress {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5rem;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}

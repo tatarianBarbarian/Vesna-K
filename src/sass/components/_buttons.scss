@@ -147,6 +147,16 @@
       box-shadow: 0 0 4rem -10px white;
     }
   }
+
+  &--subscribe {
+    background-image: url(../img/convert.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+
+    &:hover {
+      box-shadow: 0 0 4rem -10px white;
+    }
+  }
 }
 
 .btn-control {

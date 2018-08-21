@@ -1,0 +1,27 @@
+.footer-nav {
+  display: flex;
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-grey;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0 2rem 5rem;
+    background: url(../img/ang-right-grey.png) no-repeat;
+    background-position: left center;
+
+    &:hover {
+      color: $color-primary;
+      background-image: url(../img/ang-right-blue.png);
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-grey-light;
+    }
+  }
+}

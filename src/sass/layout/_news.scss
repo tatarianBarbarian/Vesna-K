@@ -1,5 +1,6 @@
 .news {
   padding-top: 10rem;
+  padding-bottom: 10rem;
   background-color: $color-secondary;
 
   &__container {
@@ -13,6 +14,7 @@
     width: 100%;
     display: flex;
     margin-top: 10rem;
+    background: white;
   }
 
   &__card {
@@ -22,6 +24,7 @@
     padding: 3rem;
     text-decoration: none;
     color: black;
+    padding-bottom: 7rem;
 
     &:hover .pic-overlay {
       display: block;
@@ -38,5 +41,9 @@
     line-height: 3rem;
     min-height: 6rem;
     margin: 4rem 0;
+  }
+
+  &__announce {
+    font-size: 2rem;
   }
 }

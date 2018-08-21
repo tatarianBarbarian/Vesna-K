@@ -1,12 +1,29 @@
 {
-  "name": "vesna",
+  "name": "prj7",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatarianBarbarian/Vesna-K.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tatarianBarbarian/Vesna-K/issues"
+  },
+  "homepage": "https://github.com/tatarianBarbarian/Vesna-K#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^3.9.4",
+    "gulp-clean-css": "^3.10.0",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-rigger": "^0.5.8",
@@ -14,7 +31,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.9.3",
     "normalize-scss": "^7.0.1",
     "rimraf": "^2.6.2"
   }
