@@ -40,14 +40,14 @@
     }
 
     &--callme {
-        @include btn_icon(-281px, -97px, 2.7rem, 2.7rem);
+        @include btn_icon(-28.1rem, -9.7rem, 2.7rem, 2.7rem);
     }
 
     &--arrow {
-        @include btn_icon(-89px, -5px, 2.3rem, 2.1rem);
+        @include btn_icon(-8.9rem, -0.5rem, 2.3rem, 2.1rem);
 
         &-white {
-            @include btn_icon(-122px, -5px, 2.3rem, 2.1rem);
+            @include btn_icon(-12.2rem, -0.5rem, 2.3rem, 2.1rem);
         }
     }
 
@@ -84,23 +84,22 @@
         background-image: url($icon-sprite);
         background-repeat: no-repeat;
         cursor: pointer;
-        // transition: transform 0.2s;
 
         &:hover {
             transform: scale(1.01);
         }
 
         &--less {
-            background-position: -5px -5px;
+            background-position: -0.5rem -0.5rem;
         }
 
         &--more {
-            background-position: -67px -5px;
+            background-position: -6.7rem -0.5rem;
         }
     }
 
     &--ask-us {
-        @include btn_icon(-5px, -202px, 31px, 27px);
+        @include btn_icon(-0.5rem, -20.2rem, 3.1rem, 2.7rem);
 
         &:hover {
             box-shadow: 0 0 4rem -10px white;
@@ -108,7 +107,7 @@
     }
 
     &--subscribe {
-        @include btn_icon(-42px, -49px, 23px, 17px);
+        @include btn_icon(-4.2rem, -4.9rem, 2.3rem, 1.7rem);
 
         &:hover {
             box-shadow: 0 0 4rem -10px white;
@@ -116,9 +115,10 @@
     }
 
     &--calculate {
+        @include btn_icon(-15.5rem, -0.5rem, 3rem, 3.5rem);
+
         text-align: left;
         width: 100%;
-        @include btn_icon(-155px, -5px, 3rem, 3.5rem);
     }
 }
 
@@ -130,27 +130,27 @@
         width: 8.5rem;
         height: 8rem;
         border: 1px solid $color-grey-light;
-        background-position: center;
         background-repeat: no-repeat;
         background-color: transparent;
         cursor: pointer;
+        position: relative;
 
         &--left {
             border-right: none;
             border-radius: 50% 0 0 50%;
-            background-image: url(../img/prodslider-arr-left-blue.png);
+            @include btn_controls_icon(-28.1rem, -13.4rem, 2.6rem, 2.6rem);
 
             &:disabled {
-                background-image: url(../img/prodslider-arr-left-grey.png);
+                @include btn_controls_icon(-31.7rem, -13.4rem, 2.6rem, 2.6rem);
             }
         }
 
         &--right {
             border-radius: 0 50% 50% 0;
-            background-image: url(../img/prodslider-arr-right-blue.png);
+            @include btn_controls_icon(-28.1rem, -16.8rem, 2.6rem, 2.6rem);
 
             &:disabled {
-                background-image: url(../img/prodslider-arr-right-grey.png);
+                @include btn_controls_icon(-31.7rem, -16.8rem, 2.6rem, 2.6rem);
             }
         }
     }
