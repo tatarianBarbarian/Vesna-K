@@ -1,27 +1,28 @@
 .footer-nav {
-  display: flex;
-
-  &__links {
     display: flex;
-    flex-direction: column;
-  }
 
-  &__link {
-    text-decoration: none;
-    color: $color-grey;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 2rem 0 2rem 5rem;
-    background: url(../img/ang-right-grey.png) no-repeat;
-    background-position: left center;
-
-    &:hover {
-      color: $color-primary;
-      background-image: url(../img/ang-right-blue.png);
+    &__links {
+        display: flex;
+        flex-direction: column;
     }
 
-    &:not(:last-child) {
-      border-bottom: 1px solid $color-grey-light;
+    &__link {
+        @include btn_icon(-47px, -5px, 1.5rem, 2.5rem, 95%);
+
+        text-decoration: none;
+        color: $color-grey;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 2rem 0 2rem 5rem;
+        position: relative;
+
+        &:hover {
+            @include btn_icon(-27px, -5px, 1.5rem, 2.5rem, 95%);
+            color: $color-primary;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-grey-light;
+        }
     }
-  }
 }

@@ -1,56 +1,56 @@
 .for {
-  background-image: linear-gradient(to bottom, transparent, white);
-  margin-top: 5rem;
+    background-image: linear-gradient(to bottom, transparent, white);
+    margin-top: 5rem;
 }
 
 .whatfor {
-  position: relative;
-  display: flex;
-
-  &__block {
-    width: calc(100% / 4);
-    min-height: 13rem;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-position: center top;
-    background-repeat: no-repeat;
     position: relative;
+    display: flex;
 
-    &--projectors {
-      background-image: url(../img/icon-proj.png);
+    &__block {
+        width: calc(100% / 4);
+        min-height: 13rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-position: center top;
+        background-repeat: no-repeat;
+        position: relative;
+
+        &--projectors {
+            background-image: url(../img/icon-proj.png);
+        }
+
+        &--administrations {
+            background-image: url(../img/icon-administration.png);
+        }
+
+        &--buyers {
+            background-image: url(../img/icon-buyers.png);
+        }
+
+        &--dealers {
+            background-image: url(../img/icon-dealers.png);
+        }
     }
 
-    &--administrations {
-      background-image: url(../img/icon-administration.png);
+    &__title {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $color-primary;
     }
 
-    &--buyers {
-      background-image: url(../img/icon-buyers.png);
+    &__hint {
+        // display: none;
+        visibility: hidden;
+        top: 110%;
+        transition: all 0.3s;
+        opacity: 0;
     }
 
-    &--dealers {
-      background-image: url(../img/icon-dealers.png);
+    &__block:hover > &__hint {
+        // display: block;
+        visibility: visible;
+        opacity: 1;
     }
-  }
-
-  &__title {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: $color-primary;
-  }
-
-  &__hint {
-    // display: none;
-    visibility: hidden;
-    top: 110%;
-    transition: all 0.3s;
-    opacity: 0;
-  }
-
-  &__block:hover > &__hint {
-    // display: block;
-    visibility: visible;
-    opacity: 1;
-  }
 }

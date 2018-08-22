@@ -138,19 +138,19 @@
         &--left {
             border-right: none;
             border-radius: 50% 0 0 50%;
-            @include btn_controls_icon(-28.1rem, -13.4rem, 2.6rem, 2.6rem);
+            @include btn_icon(-28.1rem, -13.4rem, 2.6rem, 2.6rem, 30%);
 
             &:disabled {
-                @include btn_controls_icon(-31.7rem, -13.4rem, 2.6rem, 2.6rem);
+                @include btn_icon(-31.7rem, -13.4rem, 2.6rem, 2.6rem, 30%);
             }
         }
 
         &--right {
             border-radius: 0 50% 50% 0;
-            @include btn_controls_icon(-28.1rem, -16.8rem, 2.6rem, 2.6rem);
+            @include btn_icon(-28.1rem, -16.8rem, 2.6rem, 2.6rem, 30%);
 
             &:disabled {
-                @include btn_controls_icon(-31.7rem, -16.8rem, 2.6rem, 2.6rem);
+                @include btn_icon(-31.7rem, -16.8rem, 2.6rem, 2.6rem, 30%);
             }
         }
     }

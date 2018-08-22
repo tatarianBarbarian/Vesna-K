@@ -1,25 +1,9 @@
-@mixin btn_icon($bg-pos-x, $bg-pos-y, $width, $height) {
+@mixin btn_icon($bg-pos-x, $bg-pos-y, $width, $height, $right: 5%) {
     &::after {
         display: block;
         position: absolute;
         content: "";
-        right: 5%;
-        top: 50%;
-        transform: translateY(-50%);
-        background-image: url($icon-sprite);
-        background-repeat: no-repeat;
-        background-position: $bg-pos-x $bg-pos-y;
-        width: $width;
-        height: $height;
-    }
-}
-
-@mixin btn_controls_icon($bg-pos-x, $bg-pos-y, $width, $height) {
-    &::after {
-        display: block;
-        position: absolute;
-        content: "";
-        right: 30%;
+        right: $right;
         top: 50%;
         transform: translateY(-50%);
         background-image: url($icon-sprite);
