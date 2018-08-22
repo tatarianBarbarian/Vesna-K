@@ -53,9 +53,13 @@ gulp.task("html:build", function() {
 });
 
 gulp.task("style:build", function() {
-    return gulp
-        .src(path.src.style)
-        .pipe(sourceMaps.init()) // Initiate source mapper
+    let pipeline = gulp.src(path.src.style);
+
+    if (!process.env.IS_PROD) {
+        pipeline.pipe(sourceMaps.init()); // Initiate source mapper
+    }
+
+    return pipeline
         .pipe(plumber())
         .pipe(sass()) //Sass compiling
         .pipe(sass().on("error", sass.logError)) //handling sass errors

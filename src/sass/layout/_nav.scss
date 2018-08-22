@@ -1,128 +1,128 @@
 .main-nav {
-  display: flex;
-  margin-top: 3.5rem;
-  box-shadow: 0 0 9px -5px black;
-
-  &__link {
-    background: white;
-    font-size: 2.2rem;
-    text-decoration: none;
-    color: black;
-    transition: all 0.3s;
-    padding: 2px 0;
     display: flex;
-    flex-grow: 1;
-    position: relative;
-
-    // Styles for border wrapper element
-    &-border {
-      display: block;
-      padding: 2.8rem 3.5rem;
-      color: black;
-      text-decoration: none;
-    }
-
-    &:not(:last-child) &-border {
-      border-right: 2px solid #e1f0fc;
-
-      &:hover {
-        border-right-color: $color-primary;
-      }
-    }
-
-    &:hover {
-      background: $color-primary;
-      color: white;
-    }
-
-    &:hover &-border {
-      border-right-color: $color-primary;
-      color: white;
-    }
-
-    &:first-child {
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-    }
-
-    &:last-child {
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-    }
-  }
-
-  &__link:hover > &__dropdown-wrapper {
-    display: block;
-  }
-
-  &__dropdown {
-    list-style: none;
-    min-width: 50rem;
+    margin-top: 3.5rem;
     box-shadow: 0 0 9px -5px black;
-    background: white;
-    border-radius: 5px;
 
-    &-wrapper {
-      display: none;
-      position: absolute;
-      z-index: 999;
-      left: 0;
-      top: 100%;
-      padding-top: 2rem;
+    &__link {
+        background: white;
+        font-size: 2.2rem;
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s;
+        padding: 2px 0;
+        display: flex;
+        flex-grow: 1;
+        position: relative;
+
+        // Styles for border wrapper element
+        &-border {
+            display: block;
+            padding: 2.8rem 3.5rem;
+            color: black;
+            text-decoration: none;
+        }
+
+        &:not(:last-child) &-border {
+            border-right: 2px solid #e1f0fc;
+
+            &:hover {
+                border-right-color: $color-primary;
+            }
+        }
+
+        &:hover {
+            background: $color-primary;
+            color: white;
+        }
+
+        &:hover &-border {
+            border-right-color: $color-primary;
+            color: white;
+        }
+
+        &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
     }
 
-    &-item {
-      display: block;
-      padding: 1rem 0;
-      padding-left: 6.5rem;
-      background: white url(../img/dd-arr-grey.png) no-repeat;
-      background-position: 3rem center;
-      position: relative;
-
-      &:hover {
-        background-image: $dd-arrow-blue;
-      }
-
-      &:not(:last-child) {
-        border-bottom: 1px solid #e0e7ed;
-      }
+    &__link:hover > &__dropdown-wrapper {
+        display: block;
     }
 
-    &-link {
-      text-decoration: none;
-      color: black;
-      display: block;
+    &__dropdown {
+        list-style: none;
+        min-width: 50rem;
+        box-shadow: 0 0 9px -5px black;
+        background: white;
+        border-radius: 5px;
+
+        &-wrapper {
+            display: none;
+            position: absolute;
+            z-index: 999;
+            left: 0;
+            top: 100%;
+            padding-top: 2rem;
+        }
+
+        &-item {
+            display: block;
+            padding: 1rem 0;
+            padding-left: 6.5rem;
+            background: white $dd-arrow-grey no-repeat;
+            background-position: 3rem center;
+            position: relative;
+
+            &:hover {
+                background-image: $dd-arrow-blue;
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #e0e7ed;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
     }
-  }
 
-  &__dropdown-item:hover > &__ddown2 {
-    display: block;
-  }
+    &__dropdown-item:hover > &__ddown2 {
+        display: block;
+    }
 
-  &__ddown2 {
-    display: none;
-    position: absolute;
-    list-style-type: none;
-    left: 100%;
-    z-index: 99;
-    top: 0;
-    min-width: 400px;
-    background: white;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: inset 12px -2px 24px -25px #000;
-    //TODO: Maybe some changes in shadows
-
-    &-link {
-      text-decoration: none;
-      color: black;
-      display: block;
-      padding: 1rem 1.5rem;
-
-      &:hover {
-        background: $color-secondary;
+    &__ddown2 {
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        left: 100%;
+        z-index: 99;
+        top: 0;
+        min-width: 400px;
+        background: white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
         box-shadow: inset 12px -2px 24px -25px #000;
-      }
+        //TODO: Maybe some changes in shadows
+
+        &-link {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 1rem 1.5rem;
+
+            &:hover {
+                background: $color-secondary;
+                box-shadow: inset 12px -2px 24px -25px #000;
+            }
+        }
     }
-  }
 }
