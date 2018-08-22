@@ -1,77 +1,99 @@
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 // Font properties
 
 .u-fs-20 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .u-fs-22 {
-  font-size: 2.2rem;
+    font-size: 2.2rem;
 }
 
 .u-fs-26 {
-  font-size: 2.6rem;
+    font-size: 2.6rem;
 }
 
 .u-fs-46 {
-  font-size: 4.6rem;
+    font-size: 4.6rem;
 }
 
 .u-fw-bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 //Margins
+.u-mt-20 {
+    margin-top: 2rem;
+}
 
 .u-mt-30 {
-  margin-top: 3rem;
+    margin-top: 3rem;
 }
 
 .u-mt-45 {
-  margin-top: 4.5rem;
+    margin-top: 4.5rem;
 }
 
 .u-mt-50 {
-  margin-top: 5rem;
+    margin-top: 5rem;
 }
 
 .u-mt-100 {
-  margin-top: 10rem;
+    margin-top: 10rem;
 }
 
 .u-mtb-50 {
-  margin: 5rem 0;
+    margin: 5rem 0;
+}
+
+.u-mtb-60 {
+    margin: 6rem 0;
 }
 
 //Text align
 
 .u-ta-c {
-  text-align: center;
+    text-align: center;
 }
 
+.u-ta-left {
+    text-align: left;
+}
 // Backgrounds
 
 .u-bg-white-blue {
-  background: linear-gradient(to right, white 50%, $color-secondary 49%);
+    background: linear-gradient(to right, white 50%, $color-secondary 49%);
 }
 
 .u-bg-blue-white {
-  background: linear-gradient(to right, $color-secondary 50%, white 49%);
+    background: linear-gradient(to right, $color-secondary 50%, white 49%);
 }
 
 // Colors
 
 .u-c-primary {
-  color: $color-primary;
+    color: $color-primary;
 }
 
 .u-c-white {
-  color: $color-white;
+    color: $color-white;
+}
+
+.u-bb-2-dotted--grey {
+    border-bottom: 2px dotted $color-grey;
+}
+
+.u-w-full {
+    width: 100%;
+}
+
+.u-link {
+    color: black;
 }

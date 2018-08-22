@@ -116,9 +116,12 @@
 
     &--calculate {
         @include btn_icon(-15.5rem, -0.5rem, 3rem, 3.5rem);
-
         text-align: left;
-        width: 100%;
+    }
+
+    &--ask-question {
+        color: $color-grey;
+        @include btn_icon(-0.5rem, -20.2rem, 3.1rem, 2.7rem);
     }
 }
 
